@@ -1,4 +1,3 @@
 [
-  "auth.coffee",
   "redis-brain.coffee"
 ]
