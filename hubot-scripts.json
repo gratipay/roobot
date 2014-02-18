@@ -1,3 +1,4 @@
 [
+  "tell.coffee",
   "redis-brain.coffee"
 ]
