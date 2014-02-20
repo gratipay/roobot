@@ -44,13 +44,13 @@ git branch --set-upstream-to=heroku/master
 grunt release[:patch | :minor | :major]
 # Enter gpg key password when prompted
 
-# Push publicly to GitHub if Heroku push succeeded
-git push origin master --tags
-
-# Confirm the "roobot-test" bot is working in #gittip-hubot-test
+# Confirm the bot is working in #gittip-hubot-test
 heroku logs
 
-# Promote the build from roobot-test to production (ie. #gittip)
+# Push publicly to GitHub if Heroku looks good
+git push origin master --tags
+
+# Promote the build from test to prod (ie. #gittip)
 heroku ps:stop bot --app=roobot-prod # So that previous dyno logs out of IRC
 heroku pipeline:promote
 heroku logs --app=roobot-prod
