@@ -55,7 +55,7 @@ heroku pipeline:promote
 heroku logs --app=roobot-prod
 ```
 
-![Hubot deploy pipeline](https://rawgithub.com/gittip/roobot/1-create-svg/docs/hubot-deploy-workflow.svg)
+![Hubot deploy pipeline](https://rawgithub.com/gittip/roobot/master/docs/hubot-deploy-workflow.svg)
 
 ### Scripting
 
