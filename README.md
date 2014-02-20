@@ -38,8 +38,10 @@ Defore deploying changes, you'll need to do the following:
     `heroku plugins:install git://github.com/heroku/heroku-pipeline.git`
 
 ```
-git remote add heroku git@heroku.com:roobot-test.git
 git checkout master
+git config --replace-all remote.all.url git@heroku.com:roobot-test.git
+git config --add         remote.all.url git@github.com:gittip/roobot.git
+git push --set-upstream all master
 grunt release[:patch | :minor | :major]
 # Enter gpg key password when prompted
 
