@@ -17,5 +17,5 @@ spawn = require('child_process').spawn
 
 module.exports = (robot) ->
 
-  robot.router.post "/hubot/ping", (req, res) ->
+  robot.router.get "/hubot/ping", (req, res) ->
     res.end "PONG"
