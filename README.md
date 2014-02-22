@@ -51,8 +51,8 @@ heroku logs
 git push origin master --tags
 
 # Promote the build from test to prod (ie. #gittip)
-heroku ps:stop web --app=roobot-prod # So that previous dyno logs out of IRC
 heroku pipeline:promote
+heroku ps:restart web --app=roobot-prod # So that previous dyno logs out of IRC
 heroku logs --app=roobot-prod
 ```
 
