@@ -20,16 +20,21 @@
 #     - `public_repo`
 
 module.exports = (robot) ->
+
+  unless process.env.HUBOT_GITHUB_USER? and process.env.HUBOT_GITHUB_REPO?
+    robot.logger.warning 'You likely want to set both HUBOT_GITHUB_USER and HUBOT_GITHUB_REPO to sensible defaults [hubot-auth]'
+
   github = require('githubot')(robot)
-  #github.handleErrors (response) ->
-  #  console.log response
+
+  github.handleErrors (response) ->
+    console.log response
 
   REGEX = ///        # match [#]
     assign
     \ +
     ([\w._-]+)       # assignee [1]
     \ +
-    (
+    (                # qualified repo [2]
       (
         ([\w._-]+)\/ # repo user [4]
       )?
@@ -40,14 +45,15 @@ module.exports = (robot) ->
 
   team_id = process.env.HUBOT_GITHUB_ISSUE_ASSIGN_TEAMID
 
-  github.handleErrors (response) ->
-    console.log response
-
   robot.respond REGEX, (msg) ->
+
     assignee = msg.match[1]
-    repo_user = msg.match[4] || process.env.HUBOT_GITHUB_USER
-    repo_name = msg.match[5] || process.env.HUBOT_GITHUB_REPO
     issue_id = msg.match[8]
+    qualified_repo = github.qualified_repo msg.match[2]
+
+    unless qualified_repo?
+      msg.send "Not enough information provided to determine desired repo."
+      return
 
     github.get "teams/#{team_id}/members", (team_members) ->
       on_team = false
@@ -58,6 +64,6 @@ module.exports = (robot) ->
         github.put "teams/#{team_id}/members/#{assignee}", {}, (team) ->
           return
 
-      github.patch "repos/#{repo_user}/#{repo_name}/issues/#{issue_id}", {assignee: assignee}, (issue) ->
-        msg.send "Issue #{repo_user}/#{repo_name}##{issue_id} assigned to #{assignee}!"
+      github.patch "repos/#{qualified_repo}/issues/#{issue_id}", {assignee: assignee}, (issue) ->
+        msg.send "Issue #{qualified_repo}##{issue_id} assigned to #{assignee}!"
         msg.send issue.html_url
