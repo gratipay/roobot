@@ -1,4 +1,5 @@
 [
+  "github-pull-request-notifier.coffee",
   "tell.coffee",
   "redis-brain.coffee"
 ]
