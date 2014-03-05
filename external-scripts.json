@@ -1,5 +1,5 @@
 [
   "hubot-auth",
-  "hubot-github-repo-webhook-notifier",
+  "hubot-github-repo-event-notifier",
   "hubot-factoid"
 ]
