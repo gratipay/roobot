@@ -30,7 +30,7 @@
     "coffee-script": "~1.7.1",
     "hubot-auth": "git://github.com/patcon/hubot-auth.git#3-dont-add-admin-roles",
     "hubot-factoid": "~0.0.1",
-    "hubot-github-repo-webhook-notifier": "~1.0.0"
+    "hubot-github-repo-event-notifier": "~1.2.0"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
