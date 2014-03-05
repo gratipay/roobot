@@ -1,4 +1,5 @@
 [
   "tell.coffee",
+  "time.coffee",
   "redis-brain.coffee"
 ]
