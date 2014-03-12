@@ -1,9 +1,19 @@
 {
   "name": "roobot",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "dependencies": {
+    "coffee-script": {
+      "version": "1.7.1",
+      "from": "coffee-script@~1.7.1",
+      "dependencies": {
+        "mkdirp": {
+          "version": "0.3.5",
+          "from": "mkdirp@~0.3.5"
+        }
+      }
+    },
     "hubot": {
-      "version": "2.7.1",
+      "version": "2.7.2",
       "from": "hubot@>= 2.6.0 < 3.0.0",
       "dependencies": {
         "coffee-script": {
@@ -109,51 +119,9 @@
         }
       }
     },
-    "hubot-scripts": {
-      "version": "2.5.8",
-      "from": "hubot-scripts@>= 2.5.0 < 3.0.0",
-      "dependencies": {
-        "redis": {
-          "version": "0.8.4",
-          "from": "redis@0.8.4"
-        }
-      }
-    },
-    "hubot-irc": {
-      "version": "0.2.1",
-      "from": "hubot-irc@~0.2.0",
-      "dependencies": {
-        "irc": {
-          "version": "0.3.6",
-          "from": "irc@git+https://github.com/nandub/node-irc.git",
-          "resolved": "git+https://github.com/nandub/node-irc.git#863fcdb614e8e45d149e8488798acc10fdc843ad",
-          "dependencies": {
-            "ansi-color": {
-              "version": "0.2.1",
-              "from": "ansi-color@0.2.1"
-            }
-          }
-        },
-        "log": {
-          "version": "1.4.0",
-          "from": "log@1.4.0"
-        }
-      }
-    },
-    "coffee-script": {
-      "version": "1.7.1",
-      "from": "coffee-script@~1.7.1",
-      "dependencies": {
-        "mkdirp": {
-          "version": "0.3.5",
-          "from": "mkdirp@~0.3.5"
-        }
-      }
-    },
     "hubot-auth": {
-      "version": "0.0.1",
-      "from": "hubot-auth@git://github.com/patcon/hubot-auth.git#3-dont-add-admin-roles",
-      "resolved": "git://github.com/patcon/hubot-auth.git#b82decd9e5cf6aa46f28ce6ef4f2d4d0bf5ec28e",
+      "version": "1.0.0",
+      "from": "hubot-auth@^1.0.0",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
@@ -196,6 +164,37 @@
         "querystring": {
           "version": "0.2.0",
           "from": "querystring@~0.2.0"
+        }
+      }
+    },
+    "hubot-irc": {
+      "version": "0.2.1",
+      "from": "hubot-irc@~0.2.0",
+      "dependencies": {
+        "irc": {
+          "version": "0.3.6",
+          "from": "irc@git+https://github.com/nandub/node-irc.git",
+          "resolved": "git+https://github.com/nandub/node-irc.git#863fcdb614e8e45d149e8488798acc10fdc843ad",
+          "dependencies": {
+            "ansi-color": {
+              "version": "0.2.1",
+              "from": "ansi-color@0.2.1"
+            }
+          }
+        },
+        "log": {
+          "version": "1.4.0",
+          "from": "log@1.4.0"
+        }
+      }
+    },
+    "hubot-scripts": {
+      "version": "2.5.8",
+      "from": "hubot-scripts@~2.5.8",
+      "dependencies": {
+        "redis": {
+          "version": "0.8.4",
+          "from": "redis@0.8.4"
         }
       }
     }
