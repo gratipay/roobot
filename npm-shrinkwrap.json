@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -141,7 +141,8 @@
     },
     "hubot-github-repo-event-notifier": {
       "version": "1.2.0",
-      "from": "hubot-github-repo-event-notifier@~1.2.0",
+      "from": "hubot-github-repo-event-notifier@git://github.com/patcon/hubot-github-repo-event-notifier.git#accept-more-events",
+      "resolved": "git://github.com/patcon/hubot-github-repo-event-notifier.git#82a2b519fd2e509a5de7e9047d4b199a31fcdcce",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
