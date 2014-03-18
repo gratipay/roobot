@@ -24,16 +24,16 @@
     "url": "https://github.com/gittip/roobot.git"
   },
   "dependencies": {
-    "hubot": ">= 2.6.0 < 3.0.0",
-    "hubot-scripts": "~2.5.8",
-    "hubot-irc": "~0.2.0",
-    "coffee-script": "~1.7.1",
+    "hubot": "^2.6.0",
+    "hubot-scripts": "^2.5.8",
+    "hubot-irc": "^0.2.0",
+    "coffee-script": "^1.7.1",
     "hubot-auth": "^1.0.0",
-    "hubot-factoid": "~0.0.1",
-    "hubot-github-repo-event-notifier": "git://github.com/patcon/hubot-github-repo-event-notifier.git#accept-more-events"
+    "hubot-factoid": "^0.0.1",
+    "hubot-github-repo-event-notifier": "^1.2.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "^0.4.2",
     "grunt-release": "git://github.com/patcon/grunt-release.git#66-annotated-tags"
   },
   "engines": {
