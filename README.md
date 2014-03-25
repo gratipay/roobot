@@ -1,4 +1,4 @@
-# Roobot [![HuBoard badge](http://img.shields.io/badge/Hu-Board-7965cc.svg)](https://huboard.com/gittip/roobot)
+# Roobot [![HuBoard badge](http://img.shields.io/badge/Hu-Board-7965cc.svg)](https://huboard.com/gittip/roobot) [![Build Status](http://img.shields.io/travis/gittip/roobot/master.svg)](https://travis-ci.org/gittip/roobot)
 
 This is Gittip's version of GitHub's Campfire bot, hubot. He's pretty cool.
 
@@ -34,17 +34,20 @@ Defore deploying changes, you'll need to do the following:
     `heroku plugins:install git://github.com/heroku/heroku-pipeline.git`
 
 ```
-git remote add heroku git@heroku.com:roobot-test.git
+git clone git@github.com:gittip/roobot.git
 git checkout master
-git branch --set-upstream-to=heroku/master
+git branch --set-upstream-to=origin/master
 grunt release[:patch | :minor | :major]
-# Enter gpg key password when prompted
+
+# Here's what will happen:
+#   1. Grunt will push to origin remote (GitHub).
+#   2. Travis will run tests.
+#   3. On success, Travis will push to `roobot-test` Heroku app.
 
 # Confirm the bot is working in #gittip-hubot-test
-heroku logs
 
-# Push publicly to GitHub if Heroku looks good
-git push origin master --tags
+# Confirm logs look fine
+heroku logs --app=roobot-test
 
 # Promote the build from test to prod (ie. #gittip)
 heroku pipeline:promote
@@ -52,6 +55,27 @@ heroku ps:restart web --app=roobot-prod # If previous dyno still has nickname
 heroku logs --app=roobot-prod
 ```
 
+### Sensitive Deploys
+
+Sometimes, when pushing sensitive releases, you don't want a public
+record of the release to exist prior to successfully deploying live on
+Heroku. For example, we don't want a fixed critical bug commit public on
+GitHub, and this dangerous situation would be exacerbated if the
+subsequent Heroku deploy failed.
+
+To push directly to Heroku first:
+
+```
+git remote add heroku git@heroku.com:roobot-test.git
+git push heroku master --tags
+
+# Confirm the bot is working in #gittip-hubot-test...
+
+# Carry through above steps from normal deploy
+
+# Push to GitHub once changes are live on prod
+git push origin master --tags
+```
 ![Hubot deploy pipeline](https://rawgithub.com/gittip/roobot/master/docs/hubot-deploy-workflow.svg)
 
 ### Scripting

@@ -1,0 +1,23 @@
+language: node_js
+
+node_js:
+  - "0.11"
+
+services:
+  - redis-server
+
+install_script: npm install
+
+script: npm test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: UW2RYWtLOrC/Annjo8jvFUK/v+mgZJUTBnbrePRGED81zVBKqoLAGGxAcIMuyWt3JYNSpbz4RrgzWqE09ykeVTf7uzHYEgvYUWuS+UNDnvPohYRM2WQ8RgqDn5QCfkSn8cerYOFeQtwdrL6siXbfIx9AhfdzStOi/Kxz2LNJp2s=
+  app:
+    master: roobot-test
+  on:
+    repo: gittip/roobot
+    tags: true
+    # Official hack: http://docs.travis-ci.com/user/deployment/heroku/#Conditional-Deploys
+    all_branches: true
