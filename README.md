@@ -27,16 +27,14 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Defore deploying changes, you'll need to do the following:
 
-  * install **Gnu Privacy Guard (GPG)**
-  * generate a GPG key
-  * configure **Git** to use your key
+  * install `grunt-cli`: `[sudo] grunt install --global grunt-cli`
+  * install Heroku Toolbelt CLI
   * install [Heroku pipeline plugin](https://devcenter.heroku.com/articles/labs-pipelines):
     `heroku plugins:install git://github.com/heroku/heroku-pipeline.git`
 
 ```
 git clone git@github.com:gittip/roobot.git
 git checkout master
-git branch --set-upstream-to=origin/master
 grunt release[:patch | :minor | :major]
 
 # Here's what will happen:
@@ -50,7 +48,7 @@ grunt release[:patch | :minor | :major]
 heroku logs --app=roobot-test
 
 # Promote the build from test to prod (ie. #gittip)
-heroku pipeline:promote
+heroku pipeline:promote --app=roobot-test
 heroku ps:restart web --app=roobot-prod # If previous dyno still has nickname
 heroku logs --app=roobot-prod
 ```
@@ -67,7 +65,9 @@ To push directly to Heroku first:
 
 ```
 git remote add heroku git@heroku.com:roobot-test.git
-git push heroku master --tags
+git config branch.master.remote heroku
+grunt release[:patch | :minor | :major]
+git config branch.master.remote origin
 
 # Confirm the bot is working in #gittip-hubot-test...
 
