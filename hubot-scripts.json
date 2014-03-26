@@ -1,4 +1,5 @@
 [
+  "github-issue-link.coffee",
   "tell.coffee",
   "time.coffee",
   "redis-brain.coffee"
