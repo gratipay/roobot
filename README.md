@@ -45,12 +45,12 @@ grunt release[:patch | :minor | :major]
 # Confirm the bot is working in #gittip-hubot-test
 
 # Confirm logs look fine
-heroku logs --app=roobot-test
+heroku --app=roobot-test logs
 
 # Promote the build from test to prod (ie. #gittip)
-heroku pipeline:promote --app=roobot-test
-heroku ps:restart web --app=roobot-prod # If previous dyno still has nickname
-heroku logs --app=roobot-prod
+heroku --app=roobot-test pipeline:promote
+heroku --app=roobot-prod ps:restart web # If previous dyno still has nickname
+heroku --app=roobot-prod logs
 ```
 
 ### Sensitive Deploys
