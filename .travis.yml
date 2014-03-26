@@ -10,6 +10,11 @@ install_script: npm install
 
 script: npm test
 
+branches:
+  except:
+    # Don't built annotated tags (full git objects)
+    - /^v\d+\.\d+\.\d+$/
+
 deploy:
   provider: heroku
   api_key:
