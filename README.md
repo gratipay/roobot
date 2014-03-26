@@ -5,7 +5,6 @@ This is Gittip's version of GitHub's Campfire bot, hubot. He's pretty cool.
 ## Requirements
 
   * install [**NPM**](http://nodejs.org/)
-  * install [**Grunt**](http://gruntjs.com/): `npm install --global grunt-cli`
   * install [**Redis**](http://redis.io/topics/quickstart), hubot's brain.
     (Installing via [homebrew](https://github.com/Homebrew/homebrew/wiki/Installation) is recommended on OSX.)
 
@@ -27,7 +26,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Defore deploying changes, you'll need to do the following:
 
-  * install `grunt-cli`: `[sudo] grunt install --global grunt-cli`
+  * install [**Grunt CLI**](http://gruntjs.com/): `[sudo] npm install --global grunt-cli`
   * install Heroku Toolbelt CLI
   * install [Heroku pipeline plugin](https://devcenter.heroku.com/articles/labs-pipelines):
     `heroku plugins:install git://github.com/heroku/heroku-pipeline.git`
