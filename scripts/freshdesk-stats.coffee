@@ -21,9 +21,14 @@ module.exports = (robot) ->
     robot.http("https://#{config.api_key}:x@#{endpoint}/#{uri}.#{response_type}")
       .get() (err, res, body) ->
         open_count = 0
+        overdue_count = 0
 
         issues = JSON.parse body
         for issue in issues
           open_count++ if issue.status_name.match /open/i
 
-        msg.send "Open support tickets: #{open_count}"
+          current_date = Date.parse new Date()
+          due_date = Date.parse issue.frDueBy
+          overdue_count++ if due_date < current_date
+
+        msg.send "Open support tickets: #{open_count} (#{overdue_count} with response due)"
