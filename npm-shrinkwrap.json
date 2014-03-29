@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -15,16 +15,15 @@
     "githubot": {
       "version": "0.4.2",
       "from": "githubot@^0.4.0",
-      "resolved": "https://registry.npmjs.org/githubot/-/githubot-0.4.2.tgz",
       "dependencies": {
         "scoped-http-client": {
           "version": "0.9.8",
-          "from": "scoped-http-client@>= 0.9.8"
+          "from": "scoped-http-client@>= 0.9.8",
+          "resolved": "https://registry.npmjs.org/scoped-http-client/-/scoped-http-client-0.9.8.tgz"
         },
         "async": {
           "version": "0.2.10",
-          "from": "async@0.2.x",
-          "resolved": "https://registry.npmjs.org/async/-/async-0.2.10.tgz"
+          "from": "async@0.2.x"
         }
       }
     },
@@ -34,23 +33,28 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "optparse": {
           "version": "1.0.4",
-          "from": "optparse@1.0.4"
+          "from": "optparse@1.0.4",
+          "resolved": "https://registry.npmjs.org/optparse/-/optparse-1.0.4.tgz"
         },
         "scoped-http-client": {
           "version": "0.9.8",
-          "from": "scoped-http-client@>= 0.9.8"
+          "from": "scoped-http-client@>= 0.9.8",
+          "resolved": "https://registry.npmjs.org/scoped-http-client/-/scoped-http-client-0.9.8.tgz"
         },
         "log": {
           "version": "1.4.0",
-          "from": "log@1.4.0"
+          "from": "log@1.4.0",
+          "resolved": "https://registry.npmjs.org/log/-/log-1.4.0.tgz"
         },
         "express": {
           "version": "3.3.4",
           "from": "express@3.3.4",
+          "resolved": "https://registry.npmjs.org/express/-/express-3.3.4.tgz",
           "dependencies": {
             "connect": {
               "version": "2.8.4",
@@ -58,11 +62,13 @@
               "dependencies": {
                 "qs": {
                   "version": "0.6.5",
-                  "from": "qs@0.6.5"
+                  "from": "qs@0.6.5",
+                  "resolved": "https://registry.npmjs.org/qs/-/qs-0.6.5.tgz"
                 },
                 "formidable": {
                   "version": "1.0.14",
-                  "from": "formidable@1.0.14"
+                  "from": "formidable@1.0.14",
+                  "resolved": "https://registry.npmjs.org/formidable/-/formidable-1.0.14.tgz"
                 },
                 "bytes": {
                   "version": "0.2.0",
@@ -74,7 +80,8 @@
                 },
                 "uid2": {
                   "version": "0.0.2",
-                  "from": "uid2@0.0.2"
+                  "from": "uid2@0.0.2",
+                  "resolved": "https://registry.npmjs.org/uid2/-/uid2-0.0.2.tgz"
                 }
               }
             },
@@ -94,7 +101,8 @@
             },
             "mkdirp": {
               "version": "0.3.5",
-              "from": "mkdirp@0.3.5"
+              "from": "mkdirp@0.3.5",
+              "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.3.5.tgz"
             },
             "cookie": {
               "version": "0.1.0",
@@ -102,7 +110,8 @@
             },
             "buffer-crc32": {
               "version": "0.2.1",
-              "from": "buffer-crc32@0.2.1"
+              "from": "buffer-crc32@0.2.1",
+              "resolved": "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz"
             },
             "fresh": {
               "version": "0.1.0",
@@ -115,6 +124,7 @@
             "send": {
               "version": "0.1.3",
               "from": "send@0.1.3",
+              "resolved": "https://registry.npmjs.org/send/-/send-0.1.3.tgz",
               "dependencies": {
                 "mime": {
                   "version": "1.2.11",
@@ -124,7 +134,8 @@
             },
             "cookie-signature": {
               "version": "1.0.1",
-              "from": "cookie-signature@1.0.1"
+              "from": "cookie-signature@1.0.1",
+              "resolved": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz"
             },
             "debug": {
               "version": "0.7.4",
@@ -156,7 +167,8 @@
     },
     "hubot-github-repo-event-notifier": {
       "version": "1.3.0",
-      "from": "hubot-github-repo-event-notifier@^1.2.0",
+      "from": "hubot-github-repo-event-notifier@git://github.com/patcon/hubot-github-repo-event-notifier.git#master",
+      "resolved": "git://github.com/patcon/hubot-github-repo-event-notifier.git#acfa3cc6f17fdbae91b3078dd805f6df600d3773",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
@@ -199,18 +211,19 @@
         },
         "log": {
           "version": "1.4.0",
-          "from": "log@1.4.0"
+          "from": "log@1.4.0",
+          "resolved": "https://registry.npmjs.org/log/-/log-1.4.0.tgz"
         }
       }
     },
     "hubot-scripts": {
       "version": "2.5.11",
       "from": "hubot-scripts@^2.5.8",
-      "resolved": "https://registry.npmjs.org/hubot-scripts/-/hubot-scripts-2.5.11.tgz",
       "dependencies": {
         "redis": {
           "version": "0.8.4",
-          "from": "redis@0.8.4"
+          "from": "redis@0.8.4",
+          "resolved": "https://registry.npmjs.org/redis/-/redis-0.8.4.tgz"
         }
       }
     }
