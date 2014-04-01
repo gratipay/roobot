@@ -1,5 +1,6 @@
 [
   "hubot-auth",
   "hubot-github-repo-event-notifier",
-  "hubot-factoid"
+  "hubot-factoid",
+  "hubot-tell"
 ]

@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -49,6 +49,7 @@
         "express": {
           "version": "3.3.4",
           "from": "express@3.3.4",
+          "resolved": "https://registry.npmjs.org/express/-/express-3.3.4.tgz",
           "dependencies": {
             "connect": {
               "version": "2.8.4",
@@ -125,7 +126,7 @@
               "from": "cookie-signature@1.0.1"
             },
             "debug": {
-              "version": "0.7.4",
+              "version": "0.8.0",
               "from": "debug@*"
             }
           }
@@ -210,6 +211,11 @@
           "from": "redis@0.8.4"
         }
       }
+    },
+    "hubot-tell": {
+      "version": "1.0.0",
+      "from": "hubot-tell@git://github.com/patcon/hubot-tell.git#3-command-aliases",
+      "resolved": "git://github.com/patcon/hubot-tell.git#836e6f3578dd7e4c4d78358c083eb4b8195d28f5"
     }
   }
 }
