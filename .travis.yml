@@ -26,3 +26,14 @@ deploy:
     tags: true
     # Official hack: http://docs.travis-ci.com/user/deployment/heroku/#Conditional-Deploys
     all_branches: true
+
+notifications:
+  email: false
+  irc:
+    channels:
+      - "chat.freenode.org#gittip"
+    on_success: change
+    on_failure: always
+    template:
+      - "%{repository} (%{branch}:%{commit} by %{author}): %{message} (%{build_url})"
+    skip_join: true
