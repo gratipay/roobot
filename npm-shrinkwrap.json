@@ -18,7 +18,8 @@
       "dependencies": {
         "scoped-http-client": {
           "version": "0.9.8",
-          "from": "scoped-http-client@>= 0.9.8"
+          "from": "scoped-http-client@>= 0.9.8",
+          "resolved": "https://registry.npmjs.org/scoped-http-client/-/scoped-http-client-0.9.8.tgz"
         },
         "async": {
           "version": "0.2.10",
@@ -27,24 +28,29 @@
       }
     },
     "hubot": {
-      "version": "2.7.2",
+      "version": "2.7.3",
       "from": "hubot@^2.6.0",
+      "resolved": "https://registry.npmjs.org/hubot/-/hubot-2.7.3.tgz",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "optparse": {
           "version": "1.0.4",
-          "from": "optparse@1.0.4"
+          "from": "optparse@1.0.4",
+          "resolved": "https://registry.npmjs.org/optparse/-/optparse-1.0.4.tgz"
         },
         "scoped-http-client": {
           "version": "0.9.8",
-          "from": "scoped-http-client@>= 0.9.8"
+          "from": "scoped-http-client@>= 0.9.8",
+          "resolved": "https://registry.npmjs.org/scoped-http-client/-/scoped-http-client-0.9.8.tgz"
         },
         "log": {
           "version": "1.4.0",
-          "from": "log@1.4.0"
+          "from": "log@1.4.0",
+          "resolved": "https://registry.npmjs.org/log/-/log-1.4.0.tgz"
         },
         "express": {
           "version": "3.3.4",
@@ -73,7 +79,8 @@
                 },
                 "uid2": {
                   "version": "0.0.2",
-                  "from": "uid2@0.0.2"
+                  "from": "uid2@0.0.2",
+                  "resolved": "https://registry.npmjs.org/uid2/-/uid2-0.0.2.tgz"
                 }
               }
             },
@@ -101,7 +108,8 @@
             },
             "buffer-crc32": {
               "version": "0.2.1",
-              "from": "buffer-crc32@0.2.1"
+              "from": "buffer-crc32@0.2.1",
+              "resolved": "https://registry.npmjs.org/buffer-crc32/-/buffer-crc32-0.2.1.tgz"
             },
             "fresh": {
               "version": "0.1.0",
@@ -114,6 +122,7 @@
             "send": {
               "version": "0.1.3",
               "from": "send@0.1.3",
+              "resolved": "https://registry.npmjs.org/send/-/send-0.1.3.tgz",
               "dependencies": {
                 "mime": {
                   "version": "1.2.11",
@@ -123,7 +132,8 @@
             },
             "cookie-signature": {
               "version": "1.0.1",
-              "from": "cookie-signature@1.0.1"
+              "from": "cookie-signature@1.0.1",
+              "resolved": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz"
             },
             "debug": {
               "version": "0.8.0",
@@ -182,7 +192,7 @@
       }
     },
     "hubot-irc": {
-      "version": "0.2.1",
+      "version": "0.2.2",
       "from": "hubot-irc@^0.2.0",
       "dependencies": {
         "irc": {
@@ -198,7 +208,8 @@
         },
         "log": {
           "version": "1.4.0",
-          "from": "log@1.4.0"
+          "from": "log@1.4.0",
+          "resolved": "https://registry.npmjs.org/log/-/log-1.4.0.tgz"
         }
       }
     },
@@ -208,14 +219,15 @@
       "dependencies": {
         "redis": {
           "version": "0.8.4",
-          "from": "redis@0.8.4"
+          "from": "redis@0.8.4",
+          "resolved": "https://registry.npmjs.org/redis/-/redis-0.8.4.tgz"
         }
       }
     },
     "hubot-tell": {
       "version": "1.0.0",
-      "from": "hubot-tell@git://github.com/patcon/hubot-tell.git#3-command-aliases",
-      "resolved": "git://github.com/patcon/hubot-tell.git#836e6f3578dd7e4c4d78358c083eb4b8195d28f5"
+      "from": "hubot-tell@git://github.com/lorenzhs/hubot-tell.git#b318aa8a3d4d48e305587e3627bb349f3a121adf",
+      "resolved": "git://github.com/lorenzhs/hubot-tell.git#b318aa8a3d4d48e305587e3627bb349f3a121adf"
     }
   }
 }
