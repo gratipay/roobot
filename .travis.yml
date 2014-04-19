@@ -18,7 +18,7 @@ branches:
 deploy:
   provider: heroku
   api_key:
-    secure: UW2RYWtLOrC/Annjo8jvFUK/v+mgZJUTBnbrePRGED81zVBKqoLAGGxAcIMuyWt3JYNSpbz4RrgzWqE09ykeVTf7uzHYEgvYUWuS+UNDnvPohYRM2WQ8RgqDn5QCfkSn8cerYOFeQtwdrL6siXbfIx9AhfdzStOi/Kxz2LNJp2s=
+    secure: DAUK1W6LYfoE+sdXrPUvq/g90nIFm1at/4rO3eAxbc+7T0MvUSrzwqmC6JaKWJbHKNdfxjsJHqGJZYh6h/ZxDipTUTKt4jQugIl14IoeqzTSmHldnbIxnwqPIaGPTNogxsfCsDcmIK8HsXMjLMRzChGsPOUJM93arlGvjtLZTYI=
   app:
     master: roobot-test
   on:
