@@ -180,6 +180,21 @@
         }
       }
     },
+    "hubot-heroku-deploy-notifier": {
+      "version": "0.0.0",
+      "from": "hubot-heroku-deploy-notifier@git://github.com/patcon/hubot-heroku-deploy-notifier.git#54b4da6026d61cef05636d5c9a63350087e2bdcd",
+      "resolved": "git://github.com/patcon/hubot-heroku-deploy-notifier.git#54b4da6026d61cef05636d5c9a63350087e2bdcd",
+      "dependencies": {
+        "coffee-script": {
+          "version": "1.6.3",
+          "from": "coffee-script@~1.6"
+        },
+        "mustache": {
+          "version": "0.8.1",
+          "from": "mustache@^0.8.1"
+        }
+      }
+    },
     "hubot-irc": {
       "version": "0.2.2",
       "from": "hubot-irc@^0.2.0",

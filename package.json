@@ -32,6 +32,7 @@
     "hubot-auth": "^1.0.0",
     "hubot-factoid": "^0.0.1",
     "hubot-github-repo-event-notifier": "^1.3.1",
+    "hubot-heroku-deploy-notifier": "git://github.com/patcon/hubot-heroku-deploy-notifier.git#54b4da6026d61cef05636d5c9a63350087e2bdcd",
     "hubot-tell": "^1.1.0"
   },
   "devDependencies": {
