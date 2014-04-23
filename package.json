@@ -39,6 +39,9 @@
     "grunt": "^0.4.2",
     "grunt-release": "git://github.com/patcon/grunt-release.git#66-annotated-tags"
   },
+  "scripts": {
+    "shrinkwrap": "rm -r node_modules npm-shrinkwrap.json && npm install && npm shrinkwrap"
+  },
   "engines": {
     "node": ">= 0.8.x",
     "npm": ">= 1.1.x"
