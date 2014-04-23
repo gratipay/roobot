@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -181,7 +181,7 @@
       }
     },
     "hubot-heroku-deploy-notifier": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "from": "hubot-heroku-deploy-notifier@^0.1.0",
       "dependencies": {
         "coffee-script": {
