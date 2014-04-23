@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.6.3",
+  "version": "1.7.0",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -40,7 +40,7 @@
         },
         "scoped-http-client": {
           "version": "0.9.8",
-          "from": "scoped-http-client@>= 0.9.8"
+          "from": "scoped-http-client@0.9.8"
         },
         "log": {
           "version": "1.4.0",
@@ -92,7 +92,7 @@
             },
             "mkdirp": {
               "version": "0.3.5",
-              "from": "mkdirp@0.3.5"
+              "from": "mkdirp@~0.3.5"
             },
             "cookie": {
               "version": "0.1.0",
@@ -181,9 +181,8 @@
       }
     },
     "hubot-heroku-deploy-notifier": {
-      "version": "0.0.0",
-      "from": "hubot-heroku-deploy-notifier@git://github.com/patcon/hubot-heroku-deploy-notifier.git#54b4da6026d61cef05636d5c9a63350087e2bdcd",
-      "resolved": "git://github.com/patcon/hubot-heroku-deploy-notifier.git#54b4da6026d61cef05636d5c9a63350087e2bdcd",
+      "version": "0.0.1",
+      "from": "hubot-heroku-deploy-notifier@^0.0.1",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
