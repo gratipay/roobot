@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -212,6 +212,20 @@
         "log": {
           "version": "1.4.0",
           "from": "log@1.4.0"
+        }
+      }
+    },
+    "hubot-pagerduty-github": {
+      "version": "0.0.2",
+      "from": "hubot-pagerduty-github@^0.0.2",
+      "dependencies": {
+        "coffee-script": {
+          "version": "1.6.3",
+          "from": "coffee-script@~1.6"
+        },
+        "moment": {
+          "version": "1.7.2",
+          "from": "moment@^1.6.2"
         }
       }
     },
