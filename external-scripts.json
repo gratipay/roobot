@@ -4,5 +4,6 @@
   "hubot-github-repo-event-notifier",
   "hubot-heroku-deploy-notifier",
   "hubot-pagerduty-github",
+  "hubot-seen",
   "hubot-tell"
 ]
