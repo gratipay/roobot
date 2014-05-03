@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -49,6 +49,7 @@
         "express": {
           "version": "3.3.4",
           "from": "express@3.3.4",
+          "resolved": "https://registry.npmjs.org/express/-/express-3.3.4.tgz",
           "dependencies": {
             "connect": {
               "version": "2.8.4",
@@ -92,7 +93,7 @@
             },
             "mkdirp": {
               "version": "0.3.5",
-              "from": "mkdirp@~0.3.5"
+              "from": "mkdirp@0.3.5"
             },
             "cookie": {
               "version": "0.1.0",
@@ -235,12 +236,13 @@
       "dependencies": {
         "redis": {
           "version": "0.8.4",
-          "from": "redis@0.8.4"
+          "from": "redis@0.8.4",
+          "resolved": "https://registry.npmjs.org/redis/-/redis-0.8.4.tgz"
         }
       }
     },
     "hubot-seen": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "from": "hubot-seen@^0.1.0",
       "dependencies": {
         "coffee-script": {
