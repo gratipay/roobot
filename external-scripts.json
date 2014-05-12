@@ -1,6 +1,7 @@
 [
   "hubot-auth",
   "hubot-factoid",
+  "hubot-freshdesk-ticket-notifier",
   "hubot-github-repo-event-notifier",
   "hubot-heroku-deploy-notifier",
   "hubot-pagerduty-github",
