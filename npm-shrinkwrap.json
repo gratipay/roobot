@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.13.1",
+  "version": "1.13.2",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -173,7 +173,7 @@
       }
     },
     "hubot-freshdesk-ticket-notifier": {
-      "version": "0.1.2",
+      "version": "0.1.4",
       "from": "hubot-freshdesk-ticket-notifier@^0.1.0",
       "dependencies": {
         "coffee-script": {
