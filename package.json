@@ -26,7 +26,7 @@
   "dependencies": {
     "coffee-script": "^1.7.1",
     "githubot": "^0.4.0",
-    "hubot": "^2.6.0",
+    "hubot": "git://github.com/patcon/hubot.git#update-express",
     "hubot-auth": "^1.0.0",
     "hubot-factoid": "^0.0.1",
     "hubot-freshdesk-ticket-notifier": "^0.1.0",
