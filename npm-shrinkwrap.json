@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.13.2",
+  "version": "1.13.3",
   "dependencies": {
     "coffee-script": {
       "version": "1.7.1",
@@ -29,12 +29,14 @@
       }
     },
     "hubot": {
-      "version": "2.7.3",
+      "version": "2.7.5",
       "from": "hubot@^2.6.0",
+      "resolved": "https://registry.npmjs.org/hubot/-/hubot-2.7.5.tgz",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "optparse": {
           "version": "1.0.4",
@@ -91,6 +93,7 @@
             "commander": {
               "version": "1.2.0",
               "from": "commander@1.2.0",
+              "resolved": "https://registry.npmjs.org/commander/-/commander-1.2.0.tgz",
               "dependencies": {
                 "keypress": {
                   "version": "0.1.0",
@@ -145,20 +148,29 @@
               "resolved": "https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.1.tgz"
             },
             "debug": {
-              "version": "0.8.1",
-              "from": "debug@*"
+              "version": "1.0.0",
+              "from": "debug@*",
+              "resolved": "https://registry.npmjs.org/debug/-/debug-1.0.0.tgz",
+              "dependencies": {
+                "ms": {
+                  "version": "0.6.2",
+                  "from": "ms@0.6.2",
+                  "resolved": "https://registry.npmjs.org/ms/-/ms-0.6.2.tgz"
+                }
+              }
             }
           }
         }
       }
     },
     "hubot-auth": {
-      "version": "1.0.0",
+      "version": "1.1.1",
       "from": "hubot-auth@^1.0.0",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@~1.6"
+          "from": "coffee-script@~1.6",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         }
       }
     },
@@ -168,7 +180,8 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@~1.6"
+          "from": "coffee-script@~1.6",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         }
       }
     },
@@ -178,7 +191,8 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "mustache": {
           "version": "0.8.1",
@@ -192,7 +206,8 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "url": {
           "version": "0.7.9",
@@ -220,7 +235,8 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "mustache": {
           "version": "0.8.1",
@@ -229,8 +245,9 @@
       }
     },
     "hubot-irc": {
-      "version": "0.2.2",
+      "version": "0.2.6",
       "from": "hubot-irc@^0.2.0",
+      "resolved": "https://registry.npmjs.org/hubot-irc/-/hubot-irc-0.2.6.tgz",
       "dependencies": {
         "irc": {
           "version": "0.3.6",
@@ -257,7 +274,8 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "moment": {
           "version": "1.7.2",
@@ -266,9 +284,9 @@
       }
     },
     "hubot-scripts": {
-      "version": "2.5.13",
+      "version": "2.5.14",
       "from": "hubot-scripts@^2.5.8",
-      "resolved": "https://registry.npmjs.org/hubot-scripts/-/hubot-scripts-2.5.13.tgz",
+      "resolved": "https://registry.npmjs.org/hubot-scripts/-/hubot-scripts-2.5.14.tgz",
       "dependencies": {
         "redis": {
           "version": "0.8.4",
@@ -283,11 +301,12 @@
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
-          "from": "coffee-script@1.6.3"
+          "from": "coffee-script@1.6.3",
+          "resolved": "https://registry.npmjs.org/coffee-script/-/coffee-script-1.6.3.tgz"
         },
         "timeago": {
           "version": "0.1.0",
-          "from": "timeago@^0.1.0"
+          "from": "timeago@~0.1"
         }
       }
     },
@@ -297,7 +316,7 @@
       "dependencies": {
         "timeago": {
           "version": "0.1.0",
-          "from": "timeago@^0.1.0"
+          "from": "timeago@~0.1"
         }
       }
     }
