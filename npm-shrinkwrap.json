@@ -306,13 +306,14 @@
         },
         "timeago": {
           "version": "0.1.0",
-          "from": "timeago@~0.1"
+          "from": "timeago@^0.1.0"
         }
       }
     },
     "hubot-tell": {
       "version": "1.1.0",
-      "from": "hubot-tell@^1.1.0",
+      "from": "hubot-tell@git://github.com/patcon/hubot-tell.git#persist-in-brain",
+      "resolved": "git://github.com/patcon/hubot-tell.git#c842045fd384675e3fc4727c2ec2369ddb16a406",
       "dependencies": {
         "timeago": {
           "version": "0.1.0",

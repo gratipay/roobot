@@ -36,7 +36,7 @@
     "hubot-pagerduty-github": "^0.0.2",
     "hubot-scripts": "^2.5.8",
     "hubot-seen": "^0.1.0",
-    "hubot-tell": "^1.1.0"
+    "hubot-tell": "git://github.com/patcon/hubot-tell.git#persist-in-brain"
   },
   "devDependencies": {
     "grunt": "^0.4.2",
