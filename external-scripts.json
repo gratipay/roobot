@@ -3,6 +3,7 @@
   "hubot-factoid",
   "hubot-freshdesk-ticket-notifier",
   "hubot-github-repo-event-notifier",
+  "hubot-google-hangouts",
   "hubot-heroku-deploy-notifier",
   "hubot-pagerduty-github",
   "hubot-seen",
