@@ -589,8 +589,8 @@
       }
     },
     "hubot-seen": {
-      "version": "0.1.1",
-      "from": "hubot-seen@^0.1.0",
+      "version": "0.2.0",
+      "from": "hubot-seen@^0.2.0",
       "dependencies": {
         "coffee-script": {
           "version": "1.6.3",
