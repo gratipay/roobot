@@ -1,6 +1,6 @@
-# Roobot [![HuBoard badge](http://img.shields.io/badge/Hu-Board-7965cc.svg)](https://huboard.com/gittip/roobot) [![Build Status](http://img.shields.io/travis/gittip/roobot/master.svg)](https://travis-ci.org/gittip/roobot)
+# Roobot [![HuBoard badge](http://img.shields.io/badge/Hu-Board-7965cc.svg)](https://huboard.com/gratipay/roobot) [![Build Status](http://img.shields.io/travis/gratipay/roobot/master.svg)](https://travis-ci.org/gratipay/roobot)
 
-This is Gittip's version of GitHub's Campfire bot, hubot. He's pretty cool.
+This is Gratipay's version of GitHub's Campfire bot, hubot. He's pretty cool.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ This is Gittip's version of GitHub's Campfire bot, hubot. He's pretty cool.
 To test roobot locally:
 
 ```
-git clone git@github.com:gittip/roobot.git && cd roobot
+git clone git@github.com:gratipay/roobot.git && cd roobot
 npm install
 bin/hubot -n roobot
 ```
@@ -32,7 +32,7 @@ Defore deploying changes, you'll need to do the following:
     `heroku plugins:install git://github.com/heroku/heroku-pipeline.git`
 
 ```
-git clone git@github.com:gittip/roobot.git
+git clone git@github.com:gratipay/roobot.git
 git checkout master
 grunt release[:patch | :minor | :major]
 
@@ -46,7 +46,7 @@ grunt release[:patch | :minor | :major]
 # Confirm logs look fine
 heroku --app=roobot-test logs
 
-# Promote the build from test to prod (ie. #gittip)
+# Promote the build from test to prod (ie. #gratipay)
 heroku --app=roobot-test pipeline:promote
 heroku --app=roobot-prod ps:restart web # If previous dyno still has nickname
 heroku --app=roobot-prod logs
@@ -75,7 +75,7 @@ git config branch.master.remote origin
 # Push to GitHub once changes are live on prod
 git push origin master --tags
 ```
-![Hubot deploy pipeline](https://rawgithub.com/gittip/roobot/master/docs/hubot-deploy-workflow.svg)
+![Hubot deploy pipeline](https://rawgithub.com/gratipay/roobot/master/docs/hubot-deploy-workflow.svg)
 
 ### Scripting
 
