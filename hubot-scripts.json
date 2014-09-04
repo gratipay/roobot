@@ -1,6 +1,5 @@
 [
   "github-issue-link.coffee",
-  "twitter_mention.coffee",
   "time.coffee",
   "redis-brain.coffee"
 ]
