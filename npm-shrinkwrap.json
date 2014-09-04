@@ -1,6 +1,6 @@
 {
   "name": "roobot",
-  "version": "1.17.1",
+  "version": "1.17.2",
   "dependencies": {
     "coffee-script": {
       "version": "1.8.0",
