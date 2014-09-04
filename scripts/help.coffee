@@ -67,7 +67,10 @@ module.exports = (robot) ->
       cmd.replace /hubot/ig, robot.name
 
     emit = cmds.join "\n"
-
+    
+    # force bot to respond privately by removing any reference to the room
+    delete msg.message.user.room
+    
     msg.send emit
 
   robot.router.get "/#{robot.name}/help", (req, res) ->
