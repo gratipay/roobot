@@ -41,7 +41,7 @@ grunt release[:patch | :minor | :major]
 #   2. Travis will run tests.
 #   3. On success, Travis will push to `roobot-test` Heroku app.
 
-# Confirm the bot is working in #gittip-hubot-test
+# Confirm the bot is working in #gratipay-test
 
 # Confirm logs look fine
 heroku --app=roobot-test logs
@@ -68,7 +68,7 @@ git config branch.master.remote heroku
 grunt release[:patch | :minor | :major]
 git config branch.master.remote origin
 
-# Confirm the bot is working in #gittip-hubot-test...
+# Confirm the bot is working in #gratipay-test...
 
 # Carry through above steps from normal deploy
 
