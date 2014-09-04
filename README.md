@@ -1,4 +1,4 @@
-# Roobot [![HuBoard badge](http://img.shields.io/badge/Hu-Board-7965cc.svg)](https://huboard.com/gratipay/roobot) [![Build Status](http://img.shields.io/travis/gratipay/roobot/master.svg)](https://travis-ci.org/gratipay/roobot)
+# Roobot [![Build Status](http://img.shields.io/travis/gratipay/roobot/master.svg)](https://travis-ci.org/gratipay/roobot)
 
 This is Gratipay's version of GitHub's Campfire bot, hubot. He's pretty cool.
 
