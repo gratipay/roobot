@@ -40,10 +40,6 @@
     "hubot-tell": "*",
     "oauth": "*"
   },
-  "devDependencies": {
-    "grunt": "^0.4.2",
-    "grunt-release": "git://github.com/patcon/grunt-release.git#bump-shrinkwrap"
-  },
   "scripts": {
     "shrinkwrap": "rm -r node_modules npm-shrinkwrap.json && npm install && npm shrinkwrap"
   },
