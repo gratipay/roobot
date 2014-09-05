@@ -78,11 +78,7 @@ twitter_search = (robot) ->
     .header("Authorization", "Bearer #{twitter_bearer_token}")
     .query(q: escape(twitter_query(robot)), since_id: last_tweet)
     .get() (err, response, body) ->
-      tweets = undefined
-      try
-        tweets = JSON.parse(body)
-      catch e
-      return if tweets is undefined
+      tweets = JSON.parse(body)
 
       if tweets.statuses? and tweets.statuses.length > 0
         retweets = {}
