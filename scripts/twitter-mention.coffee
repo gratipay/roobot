@@ -1,7 +1,7 @@
 # Description:
 #   Continuously searches Twitter for mentions of a specified string.
 #
-#   Requires a Twitter consumer key and secret, which you can get by 
+#   Requires a Twitter consumer key and secret, which you can get by
 #   creating an application here: https://dev.twitter.com/apps
 #
 # Commands:
@@ -19,7 +19,7 @@
 #
 # Author:
 #   timdorr
-# 
+#
 # Modified to supress annoying retweets flooding our IRC channel
 # Original taken from https://github.com/github/hubot-scripts/blob/master/src/scripts/twitter_mention.coffee
 
@@ -61,7 +61,7 @@ twitter_setup_search = (robot) ->
   if not twitter_bearer_token
     console.log "Invalid Twitter consumer key/secret!"
     return
-  
+
   setInterval ->
     if twitter_query(robot)?
       twitter_search(robot)
@@ -72,7 +72,7 @@ twitter_setup_search = (robot) ->
 
 
 twitter_search = (robot) ->
-  last_tweet = robot.brain.data.twitter_mention.last_tweet || ''  
+  last_tweet = robot.brain.data.twitter_mention.last_tweet || ''
 
   robot.http("https://api.twitter.com/1.1/search/tweets.json")
     .header("Authorization", "Bearer #{twitter_bearer_token}")
@@ -87,10 +87,10 @@ twitter_search = (robot) ->
           if not tweet.retweeted_status # Every RT will have a retweeted_status defined, normal tweets don't.
             message = "Tweet: #{tweet.text} - @#{tweet.user.screen_name} http://twitter.com/#{tweet.user.screen_name}/status/#{tweet.id_str}"
             robot.messageRoom process.env.HUBOT_TWITTER_MENTION_ROOM, message
-          else 
+          else
             if not retweets[tweet.retweeted_status.id_str]
               retweets[tweet.retweeted_status.id_str] = []
-            retweets[tweet.retweeted_status.id_str].push tweet # Push tweets to the corresponding retweets array            
+            retweets[tweet.retweeted_status.id_str].push tweet # Push tweets to the corresponding retweets array
         for key,value of retweets
           retweets_array = value
           original_username = retweets_array[0].retweeted_status.user.screen_name
@@ -103,6 +103,5 @@ twitter_search = (robot) ->
           message = message.slice(0,-2) + " "
           if retweets_array.length > 0
             message += "and #{retweets_array.length} others "
-          message += "retweeted http://twitter.com/#{original_username}/status/#{key}"          
+          message += "retweeted http://twitter.com/#{original_username}/status/#{key}"
           robot.messageRoom process.env.HUBOT_TWITTER_MENTION_ROOM, message
-      
