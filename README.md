@@ -1,6 +1,8 @@
-# Roobot
+# Roobot (deprecated)
 
-This is Gratipay's version of GitHub's Campfire bot, hubot. He's pretty cool.
+This ~~is~~ was Gratipay's version of GitHub's Campfire bot, hubot. He's pretty cool. 
+
+Roobot was powered off on 18th October 2016. https://github.com/gratipay/inside.gratipay.com/issues/834
 
 ## Requirements
 
